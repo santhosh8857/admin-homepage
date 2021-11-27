@@ -1,5 +1,6 @@
 import "./App.css";
-import Dashboard from "./components/Dashboard";
+import Chart from "./components/Chart";
+import Dashboard from "./components/Dashboard/Dashboard";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar/Navbar";
@@ -14,6 +15,7 @@ function App() {
             <Header />
             <div class="container-fluid">
               <Dashboard />
+              <Chart />
             </div>
           </div>
         </div>
