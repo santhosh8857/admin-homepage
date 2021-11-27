@@ -4,6 +4,7 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar/Navbar";
+import Showcase from "./components/Showcase/Showcase";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <div class="container-fluid">
               <Dashboard />
               <Chart />
+              <Showcase />
             </div>
           </div>
         </div>

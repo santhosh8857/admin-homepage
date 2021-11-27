@@ -7,7 +7,7 @@ const Navbar = () => {
     { option: "Addons", elements: ["Pages", "Charts", "Tables"] },
   ];
   return (
-    <div>
+    <div style={{ backgroundColor: "#264dc1" }}>
       <ul
         class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
         id="accordionSidebar"
