@@ -10,19 +10,19 @@ const Items = ({ item }) => {
   };
   return (
     <>
-      <hr class="sidebar-divider"></hr>
-      <div class="sidebar-heading">{item.option}</div>
-      {item.elements.map((element, index) => {
+      <hr className="sidebar-divider"></hr>
+      <div className="sidebar-heading">{item.option}</div>
+      {item.elements.map((element, key) => {
         return (
-          <li index={index} class="nav-item">
+          <li key={key} className="nav-item">
             {element === "Charts" || element === "Tables" ? (
-              <a class="nav-link" href="#">
-                <i class={icons(element)}></i>
+              <a className="nav-link" href="#">
+                <i className={icons(element)}></i>
                 <span>{element}</span>
               </a>
             ) : (
-              <a class="nav-link collapsed" href="#" data-toggle="collapse">
-                <i class={icons(element)}></i>
+              <a className="nav-link collapsed" href="#" data-toggle="collapse">
+                <i className={icons(element)}></i>
                 <span>{element}</span>
               </a>
             )}

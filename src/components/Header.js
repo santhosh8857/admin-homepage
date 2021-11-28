@@ -2,73 +2,70 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
       {/* Search */}
-      <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-        <div class="input-group">
+      <form className="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+        <div className="input-group">
           <input
             type="text"
-            class="form-control bg-light border-0 small"
+            className="form-control bg-light border-0 small"
             placeholder="Search for..."
             aria-label="Search"
             aria-describedby="basic-addon2"
           />
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
-              <i class="fas fa-search fa-sm"></i>
+          <div className="input-group-append">
+            <button className="btn btn-primary" type="button">
+              <i className="fas fa-search fa-sm"></i>
             </button>
           </div>
         </div>
       </form>
 
       {/* Header Navbar */}
-      <ul class="navbar-nav ml-auto">
+      <ul className="navbar-nav ml-auto">
         {/* Notification */}
-        <li class="nav-item dropdown no-arrow mx-1">
+        <li className="nav-item dropdown no-arrow mx-1">
           <a
-            class="nav-link dropdown-toggle"
-            href="#"
+            className="nav-link dropdown-toggle"
             id="alertsDropdown"
             role="button"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
-            <i class="fas fa-bell fa-fw"></i>
-            <span class="badge badge-danger badge-counter">3+</span>
+            <i className="fas fa-bell fa-fw"></i>
+            <span className="badge badge-danger badge-counter">3+</span>
           </a>
         </li>
 
         {/* Messages */}
-        <li class="nav-item dropdown no-arrow mx-1">
+        <li className="nav-item dropdown no-arrow mx-1">
           <a
-            class="nav-link dropdown-toggle"
-            href="#"
+            className="nav-link dropdown-toggle"
             id="messagesDropdown"
             role="button"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
-            <i class="fas fa-envelope fa-fw"></i>
-            <span class="badge badge-danger badge-counter">7</span>
+            <i className="fas fa-envelope fa-fw"></i>
+            <span className="badge badge-danger badge-counter">7</span>
           </a>
         </li>
 
-        <div class="topbar-divider d-none d-sm-block"></div>
+        <div className="topbar-divider d-none d-sm-block"></div>
 
         {/* User Information */}
-        <li class="nav-item dropdown no-arrow">
+        <li className="nav-item dropdown no-arrow">
           <a
-            class="nav-link dropdown-toggle"
-            href="#"
+            className="nav-link dropdown-toggle"
             id="userDropdown"
             role="button"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
-            <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+            <span className="mr-2 d-none d-lg-inline text-gray-600 small">
               Douglas McGee
             </span>
           </a>

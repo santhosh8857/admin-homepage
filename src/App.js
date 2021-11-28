@@ -11,15 +11,19 @@ function App() {
     <>
       <div id="wrapper">
         <Navbar />
-        <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content-wrapper" className="d-flex flex-column">
+          {/* Main Content */}
           <div id="content">
             <Header />
-            <div class="container-fluid">
+            <div className="container-fluid">
               <Dashboard />
               <Chart />
+              {/* Projects & illustrations */}
               <Showcase />
             </div>
           </div>
+          {/* Footer */}
+          <Footer />
         </div>
       </div>
     </>

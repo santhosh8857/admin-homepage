@@ -1,5 +1,6 @@
 import React from "react";
 import Items from "./Items";
+import rocket from "../Showcase/../../img/undraw_rocket.svg";
 
 const Navbar = () => {
   const navbarItems = [
@@ -9,26 +10,26 @@ const Navbar = () => {
   return (
     <div style={{ backgroundColor: "#264dc1" }}>
       <ul
-        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
         id="accordionSidebar"
       >
         <a
-          class="sidebar-brand d-flex align-items-center justify-content-center"
+          className="sidebar-brand d-flex align-items-center justify-content-center"
           href="index.html"
         >
-          <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+          <div className="sidebar-brand-icon rotate-n-15">
+            <i className="fas fa-laugh-wink"></i>
           </div>
-          <div class="sidebar-brand-text mx-3">
+          <div className="sidebar-brand-text mx-3">
             SB Admin <sup>2</sup>
           </div>
         </a>
-        <hr class="sidebar-divider my-0"></hr>
+        <hr className="sidebar-divider my-0"></hr>
 
         {/* common */}
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+        <li className="nav-item active">
+          <a className="nav-link" href="index.html">
+            <i className="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>
         </li>
@@ -37,17 +38,25 @@ const Navbar = () => {
           return <Items key={key} item={item} />;
         })}
 
-        <hr class="sidebar-divider d-none d-md-block"></hr>
-        <div class="text-center d-none d-md-inline">
-          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        <hr className="sidebar-divider d-none d-md-block"></hr>
+        <div className="text-center d-none d-md-inline">
+          <button
+            className="rounded-circle border-0"
+            id="sidebarToggle"
+          ></button>
         </div>
 
-        <div class="sidebar-card d-none d-lg-flex">
-          <p class="text-center mb-2">
+        <div className="sidebar-card d-none d-lg-flex">
+          <img
+            className="sidebar-card-illustration mb-2"
+            src={rocket}
+            alt="..."
+          />
+          <p className="text-center mb-2">
             <strong>SB Admin Pro</strong> is packed with premium features,
             components, and more!
           </p>
-          <a class="btn btn-success btn-sm">Upgrade to Pro!</a>
+          <a className="btn btn-success btn-sm">Upgrade to Pro!</a>
         </div>
       </ul>
     </div>
